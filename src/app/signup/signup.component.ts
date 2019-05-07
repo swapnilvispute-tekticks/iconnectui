@@ -52,8 +52,9 @@ export class SignupComponent implements OnInit {
                 console.log("POST Request is successful ", data);
             },
             error => {
-                this.successMsg = ''
-                this.errorMsg = 'Something went wrong !'
+                this.successMsg = false
+                this.errorMsg = true
+                this.msg = 'Something went wrong'
                 console.log("Rrror", error);
             }
         )
